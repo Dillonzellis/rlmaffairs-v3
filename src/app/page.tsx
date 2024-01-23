@@ -1,3 +1,4 @@
+import { NavDesktop } from "@/components/NavDesktop";
 import Image from "next/image";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <h1 className="absolute left-1/2 top-[10%] text-8xl text-white -translate-x-1/2">
         RLM
       </h1>
+      <NavDesktop />
     </main>
   );
 }
