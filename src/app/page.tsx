@@ -15,7 +15,7 @@ export default function Home() {
         <Image src="/hamburger.svg" alt="" width={45} height={20} />
         <div className="text-white text-lg">MENU</div>
       </div>
-      <h1 className="absolute left-1/2 top-[10%] text-8xl text-white -translate-x-1/2">
+      <h1 className="font-serif absolute left-1/2 top-[10%] text-8xl text-white -translate-x-1/2">
         RLM
       </h1>
       <NavDesktop />

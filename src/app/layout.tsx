@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
 import { Arimo } from "next/font/google";
+import { Libre_Caslon_Display } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
 
-const arimo = Arimo({ subsets: ["latin"] });
+const arimo = Arimo({ variable: "--arimo", subsets: ["latin"] });
+const libre = Libre_Caslon_Display({
+  variable: "--libre",
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={arimo.className}>{children}</body>
+      <body
+        className={cn("font-sans antialiased", arimo.variable, libre.variable)}
+      >
+        {children}
+      </body>
     </html>
   );
 }
