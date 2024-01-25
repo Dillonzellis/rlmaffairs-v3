@@ -1,3 +1,5 @@
+import { ContentCard } from "@/components/ContentCard";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { NavDesktop } from "@/components/NavDesktop";
 import { TallInfoCard } from "@/components/TallInfoCard";
 import Image from "next/image";
@@ -38,6 +40,33 @@ export default function Home() {
           buttonText="Schedule a Tour"
           buttonLink=""
         />
+      </section>
+      <section className="py-24">
+        <MaxWidthWrapper cols="twoCols">
+          <ContentCard
+            title="Floral Designs"
+            subtext="Venue & Event Space"
+            buttonText="Schedule a Tour"
+            buttonLink=""
+          />
+          <div className="relative">
+            <Image
+              src="/floral-feat.jpg"
+              alt=""
+              width={545}
+              height={415}
+              className="hover:scale-[1.03] transition-all ease-in-out duration-700"
+            />
+            <div
+              aria-hidden="true"
+              className="w-[383px] h-[475px] bg-[#90764c]/20 absolute -top-4 -left-10 -z-20"
+            ></div>
+            <div
+              aria-hidden="true"
+              className="w-[353px] h-[375px] bg-[#1B5B32]/60 absolute -bottom-7 -right-4 -z-10"
+            ></div>
+          </div>
+        </MaxWidthWrapper>
       </section>
     </main>
   );
