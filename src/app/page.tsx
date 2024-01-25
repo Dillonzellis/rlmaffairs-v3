@@ -29,8 +29,15 @@ export default function Home() {
           className="absolute bottom-8 right-7"
         />
       </section>
-      <section className="min-h-screen">
-        <TallInfoCard />
+      <section className="min-h-screen py-8 flex flex-col items-center justify-center">
+        <TallInfoCard
+          image="/venue-feat.jpg"
+          imageAlt=""
+          title="Venue & Event Space"
+          subtext="Venue & Event Space"
+          buttonText="Schedule a Tour"
+          buttonLink=""
+        />
       </section>
     </main>
   );
